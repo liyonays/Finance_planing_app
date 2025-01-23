@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* background: #505089 rgba(248, 247, 247, 0.993); */
+}
+
+.header, .footer {
+  /* background: #f0f0f396 rgba(255, 255, 0, 0.938); */
+  color: white;
+  padding: 1rem;
+  gap: 150px;
+  text-align: center;
+}
+
+.header nav a {
+  margin: 0 30px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  text-decoration:dotted;
+  color: chartreuse;
+  transform: scale(1.20);
+  transition: 0.5s;
+}
+
+.app main {
+  padding: 2rem;
+}
+
+.dashboard, .insights, .settings  {
+  text-align: center;
+  margin: 2rem;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.126);
+  padding: 1rem;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.dashboard {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f6b;
+}
+
+.home {
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+  }
+}
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-container button:hover {
+  background-color: #45a049;
+}
+
+.auth-container .error {
+  color: red;
+}
+
+.auth-container a {
+  text-decoration: none;
+  color: #4caf50;
+}

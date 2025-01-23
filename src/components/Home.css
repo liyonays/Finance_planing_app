@@ -1,0 +1,61 @@
+html {
+  height: 100%;
+  /* Background gradient is commented out. Uncomment if needed. */
+  /* background: -moz-linear-gradient(-45deg, #de437cb0 0%, #5b44b98c 100%);
+     background: -webkit-linear-gradient(-45deg, #de437c5e 0%,#5b44b933 100%);
+     background: linear-gradient(135deg, #de437c3d 0%,#5b44b963 100%); */
+  background-color: #0aabf0; /* Set a solid background color */
+  -webkit-transform: perspective(900px);
+  -webkit-transform-style: preserve-3d;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#de437d', endColorstr='#5b44b9', GradientType=1);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Ensure font name is correctly cased */
+  font-size: 25px; /* Consider using rem for better scalability */
+  background-size: cover; /* This property is unnecessary if there's no background image */
+  color: black;
+  height: 100%;
+  margin: 0; /* Remove default margin */
+}
+
+svg {
+  display: block; /* Use block to center */
+  margin: 40px auto 0; /* Center the SVG with margin */
+  width: 100%; /* Responsive width */
+}
+
+polyline {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s ease-in forwards;
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+}
+
+@keyframes dash {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+p {
+  font-size: 1.5rem; /* Use rem for better scalability */
+  text-align: center;
+  color: #141313;
+}
+
+.name {
+  font-size: 1.5rem; /* Use rem for consistency */
+  font-weight: 300; /* Use numeric value for light weight */
+}
+
+.homes {
+  font-size: 1.5rem; /* Use rem for consistency */
+  text-align: center;
+  color: #141313;
+}
+
+.gg tspan {
+  color: #141313;
+}
